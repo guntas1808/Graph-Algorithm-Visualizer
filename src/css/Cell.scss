@@ -1,0 +1,59 @@
+$idle-grid-cell-color: #E2E8DD;
+$active-grid-cell-color: #95A3A4;
+$dead-grid-cell-color: #31393C;
+$source-grid-cell-color: #386C0B;
+$destination-grid-cell-color: #C20114;
+
+.grid-cell {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    align-content: center;
+    margin: auto;
+
+    .text {
+        user-select: none;
+    }
+}
+  
+  
+.grid-cell-idle {
+    background-color: $idle-grid-cell-color;
+    transition:100ms ease-in;
+
+    &:hover {
+        transition:100ms ease-in;
+    }
+}
+  
+.grid-cell-active {
+    background-color: $active-grid-cell-color;
+
+    &:hover {
+        transition:100ms ease-in;
+    }
+}
+  
+.grid-cell-dead {
+    background-color: $dead-grid-cell-color;
+
+    &:hover {
+        transition:100ms ease-in;
+    }
+}
+  
+.grid-cell-source {
+    background-color: $source-grid-cell-color;
+
+    &:hover {
+        transition:100ms ease-in;
+    }
+}
+  
+.grid-cell-destination {
+    background-color: $destination-grid-cell-color;
+
+    &:hover {
+        transition:100ms ease-in;
+    }
+}
